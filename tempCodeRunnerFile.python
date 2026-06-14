@@ -1,0 +1,17 @@
+# Factorial of a number using recursion
+
+def factorial(n):
+    # base case
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)  # recursive call
+
+# Input from user
+num = int(input("Enter a number: "))
+
+if num < 0:
+    print("❌ Factorial does not exist for negative numbers.")
+else:
+    print(f"✅ Factorial of {num} is {factorial(num)}")
+
